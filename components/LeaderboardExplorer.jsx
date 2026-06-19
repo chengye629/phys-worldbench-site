@@ -166,7 +166,7 @@ export default function LeaderboardExplorer() {
                   className="cursor-pointer whitespace-nowrap px-4 py-3 text-left text-xs font-black uppercase tracking-wider text-slate-500 hover:text-brand-700"
                 >
                   {label}
-                  {sortKey === key ? <span className="ml-1">{sortDir === "asc" ? "↑" : "↓"}</span> : null}
+                  {sortKey === key ? <span className="ml-1">{sortDir === "asc" ? "up" : "down"}</span> : null}
                 </th>
               ))}
             </tr>
@@ -197,8 +197,8 @@ export default function LeaderboardExplorer() {
         </table>
       </div>
       <p className="mt-4 text-xs leading-6 text-slate-500">
-        Current entries report official paper results. Public external submissions are disabled
-        until the dataset, evaluation scripts, and submission rules are released.
+        Current entries report official paper results. Dataset release and evaluation scripts
+        will be provided in a future version.
       </p>
     </div>
   );

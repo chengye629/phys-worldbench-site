@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const diagnosticFindings = [
   {
-    title: "Passive prediction only partially transfers",
-    body: "Level-1 and Level-2 correlations weaken under counterfactual actions, showing that action-effect understanding needs explicit interventional evaluation."
+    title: "Backbone strength can transfer within a family",
+    body: "The new analysis shows stronger passive world modeling can improve action-conditioned dynamics and downstream policies within matched model families."
   },
   {
-    title: "Prediction scores can hide execution bottlenecks",
-    body: "Tool-mediated and deformable tasks can receive reasonable prediction scores while still failing in real-world Level-3 rollouts."
+    title: "Counterfactual actions weaken correlations",
+    body: "Level-1 to Level-2 transfer becomes weaker under counterfactual actions, so action-effect reasoning still needs direct interventional probes."
   },
   {
-    title: "Compositional and OOD tasks remain hard",
-    body: "Current policy models are more reliable on isolated atomic skills than on chained interactions or held-out skill compositions."
+    title: "Execution bottlenecks survive prediction",
+    body: "Deformation and tool-mediated skills such as pour, scoop, and squeeze can retain non-trivial prediction scores while collapsing in real-world execution."
   }
 ];
 
@@ -21,7 +21,7 @@ export default function LeaderboardPage() {
   return (
     <main className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
       <SectionHeader eyebrow="Leaderboard" title="Official Phys-WorldBench results">
-        Level-1, Level-2, and Level-3 are shown as separate tracks because they evaluate different model interfaces. The current version is an official-results leaderboard, not an open submission system.
+        Level-1, Level-2, and Level-3 are shown as separate tracks because they evaluate different model interfaces.
       </SectionHeader>
       <section className="mx-auto max-w-5xl px-0 py-8">
         <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-soft">
@@ -60,9 +60,6 @@ export default function LeaderboardPage() {
           ))}
         </div>
       </section>
-      <div className="mt-8 rounded-3xl border border-amber-200 bg-amber-50 p-6 text-sm leading-7 text-amber-900">
-        <strong>Release note:</strong> Public submissions are disabled until the dataset, evaluation scripts, and submission rules are released. Level-3 results should be treated as official verified real-robot rollout results rather than community self-reported scores.
-      </div>
     </main>
   );
 }

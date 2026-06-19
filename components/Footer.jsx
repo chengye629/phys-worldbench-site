@@ -18,7 +18,6 @@ export default function Footer() {
           <div className="mt-3 flex flex-col gap-2">
             <Link href="/leaderboard" className="hover:text-brand-600">Leaderboard</Link>
             <Link href="/dataset" className="hover:text-brand-600">Dataset</Link>
-            <Link href="/submission" className="hover:text-brand-600">Submission</Link>
             <a href={githubRepositoryUrl} target="_blank" rel="noreferrer" className="hover:text-brand-600">Github</a>
           </div>
         </div>
@@ -26,7 +25,7 @@ export default function Footer() {
           <div className="font-semibold text-slate-900">Status</div>
           <p className="mt-3 leading-7">
             Current results are official paper results. Dataset release, evaluation scripts,
-            and external submissions will be opened in a future version.
+            and code resources will be provided in a future version.
           </p>
         </div>
       </div>

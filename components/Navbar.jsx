@@ -4,7 +4,6 @@ const links = [
   ["Benchmark", "/benchmark"],
   ["Leaderboard", "/leaderboard"],
   ["Dataset", "/dataset"],
-  ["Submission", "/submission"],
   ["Citation", "/citation"]
 ];
 

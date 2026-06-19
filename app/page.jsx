@@ -16,8 +16,8 @@ const contributions = [
     body: "Level-2 compares ground-truth and deliberately invalid actions from matched observations to directly test causal intervention understanding."
   },
   {
-    title: "Atomic physical interaction space",
-    body: "Tasks are organized by physical mechanisms such as constraints, deformation, topology, and tool-mediated dynamics instead of surface task names."
+    title: "Cross-level failure diagnosis",
+    body: "The benchmark separates upstream modeling failures from downstream execution bottlenecks across compositional, OOD, deformable, and tool-mediated skills."
   }
 ];
 
@@ -140,8 +140,8 @@ export default function HomePage() {
           eyebrow="Key Contributions"
           title="Diagnosing physical interaction, not just visual plausibility"
         >
-          Phys-WorldBench is designed to reveal where embodied world models fail across prediction,
-          causal action effects, and real-world execution.
+          Phys-WorldBench distinguishes visual prediction, causal action effects, and physical
+          execution so failures are not collapsed into a single task-success number.
         </SectionHeader>
 
         <div className="grid gap-5 md:grid-cols-3">
@@ -198,8 +198,8 @@ export default function HomePage() {
           eyebrow="Official Results"
           title="Interactive leaderboard preview"
         >
-          The current leaderboard reports official paper results only. Public external submissions
-          are marked as coming soon until the dataset and evaluation scripts are released.
+          The current leaderboard reports official paper results across passive prediction,
+          action-conditioned reasoning, and real-world action generation.
         </SectionHeader>
 
         <LeaderboardExplorer />

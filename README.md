@@ -1,12 +1,11 @@
-# Phys-WorldBench Next.js Website Template
+# Phys-WorldBench Next.js Website
 
-This is a ready-to-edit Next.js project page and official-results leaderboard for **Phys-WorldBench**.
+This is the Next.js project page and official-results leaderboard for **Phys-WorldBench**.
 
 It is designed for the current stage where:
 
 - the paper/project page needs to look like a serious benchmark website;
 - the dataset is not public yet;
-- public submission is not open yet;
 - the leaderboard should report official paper results only.
 
 ## 1. Local development
@@ -32,7 +31,6 @@ app/
   benchmark/page.jsx       # Benchmark framework
   leaderboard/page.jsx     # Interactive leaderboard
   dataset/page.jsx         # Dataset coming soon page
-  submission/page.jsx      # Submission not open page
   citation/page.jsx        # BibTeX page
 components/
   LeaderboardExplorer.jsx  # Searchable/sortable leaderboard
@@ -96,9 +94,10 @@ Recommended deployment path:
 
 Every future `git push` will trigger a new deployment automatically.
 
-## 5. Why no backend yet?
+## 5. Current architecture
 
-The current benchmark site should not include an automatic submission backend because the dataset and evaluation scripts are not public yet. Keep public submission closed until the official release plan is clear.
+The current benchmark site is a static project page with official paper results. Dataset files,
+evaluation scripts, and larger media assets can be attached later when the release plan is clear.
 
 Recommended current architecture:
 
@@ -108,5 +107,3 @@ Next.js website on Vercel
 + small figures/videos in public/
 + large dataset/videos on Hugging Face Dataset or object storage later
 ```
-
-Only add FastAPI/PostgreSQL/Redis/GPU workers later if you need automatic external submissions and online evaluation.
